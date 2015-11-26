@@ -1,0 +1,4 @@
+docker build -t minecraft-1.8.8 .
+docker run --name minecraft-1.8.8 -i -t minecraft-1.8.8
+docker ps
+
