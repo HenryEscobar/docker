@@ -2,3 +2,9 @@ docker build -t minecraft-1.8.8 .
 docker run --name minecraft-1.8.8 -i -t minecraft-1.8.8
 docker ps
 
+# DEBUG testing:
+# docker run -i -t minecraft-1.8.8  /bin/bash
+# CMD 
+#     java -Xmx2048M -Xms2048M -jar /home/minecraft/minecraft_server.jar  nogui
+
+

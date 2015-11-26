@@ -17,7 +17,9 @@ RUN cd /home/minecraft && \
     wget -O minecraft_server.jar \
     https://s3.amazonaws.com/Minecraft.Download/versions/1.8.8/minecraft_server.1.8.8.jar 
 
+COPY ./eula.txt /home/minecraft/eula.txt
 COPY ./minecraft-server-properties /home/minecraft/server.properties
+RUN chown minecraft /home/minecraft/server.properties
  
 USER minecraft
     
