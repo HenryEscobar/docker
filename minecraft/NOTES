@@ -1,5 +1,6 @@
 docker build -t minecraft-1.8.8 .
-docker run --name minecraft-1.8.8 -i -t minecraft-1.8.8
+#docker run --name minecraft-1.8.8 -i -t minecraft-1.8.8
+docker run -d -p 65415:65415 -i -t minecraft-1.8.8
 docker ps
 
 # DEBUG testing:
