@@ -26,4 +26,4 @@ USER minecraft
 EXPOSE 65415
 
 WORKDIR /home/minecraft
-CMD ["java", "-Xmx2048M","-Xms2048M","-jar","/home/minecraft/minecraft_server.jar","nogui"]
+CMD ["java", "-Xmx2048M","-Xms2048M","-XX:+UseConMarkSweepGC","-XX:+UseParNewGC","-XX:+CMSIncrementalPacing","-XX:ParallelGCThreads=2","-XX:+AggressiveOpts","-jar","/home/minecraft/minecraft_server.jar","nogui"]
